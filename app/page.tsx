@@ -1,11 +1,11 @@
-import Container from "@/components/Container";
+"use client"
+
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-      <Container className="bg-white">
-        <div>
-          <h1>Hello World</h1>
-        </div>
-      </Container>
+    <div className="flex flex-col">
+      <HeroSection/>
+    </div>
   );
 }
