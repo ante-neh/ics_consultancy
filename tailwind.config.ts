@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        euclid: ['Euclid Circular A', 'sans-serif'], 
+      },
+      lineHeight: {
+        '20.29': '20.29px', 
+      },
+      letterSpacing: {
+        '-0.03em': '-0.03em', 
+      },
     },
   },
   plugins: [],

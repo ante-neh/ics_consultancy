@@ -1,0 +1,26 @@
+export const navigations = [
+    {
+        href:"/home",
+        name:"Home",
+    },
+    {
+        href:"/services",
+        name:"Services",
+    },
+    {
+        href:"/about",
+        name:"About",
+    },
+    {
+        href:"/destinations",
+        name:"Destinations",
+    },
+    {
+        href:"/apply",
+        name:"Apply",
+    },
+    {
+        href:"/#contact",
+        name:"Contact",
+    },
+]
