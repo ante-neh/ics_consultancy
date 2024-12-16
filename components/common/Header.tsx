@@ -3,17 +3,35 @@ import Image from "next/image";
 import Container from "./Container";
 import { navigations } from "@/data/nav";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="shadow-md sticky top-0 z-50">
+    <header
+      className={`shadow-md sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-[#01013A]/70 backdrop-blur-lg" : "bg-transparent"
+      }`}
+    >
       <Container className="flex justify-between py-4 items-center">
         <Image
           src="/assets/logo.svg"

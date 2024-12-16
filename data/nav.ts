@@ -4,12 +4,12 @@ export const navigations = [
         name:"Home",
     },
     {
-        href:"/services",
-        name:"Services",
-    },
-    {
         href:"/about",
         name:"About",
+    },
+    {
+        href:"/services",
+        name:"Services",
     },
     {
         href:"/destinations",

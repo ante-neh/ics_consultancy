@@ -6,7 +6,7 @@ import Image from "next/image";
 const HeroSection = () => {
   const handleOnClick = () => {};
   return (
-    <Container className="mt-24">
+    <Container className="mt-24 mb-12">
       <section className="bg-[#01013A] text-white flex flex-col md:flex-row items-center gap-8 w-full justify-between relative">
         <div className="max-w-[550px] text-center md:text-left">
           <h2 className="text-2xl sm:text-6xl leading-tight font-euclid font-semibold">
