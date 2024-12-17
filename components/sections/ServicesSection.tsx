@@ -3,10 +3,14 @@ import Container from "../common/Container";
 import Button from "../common/Button";
 import { services } from "@/data/data";
 import ServiceCard from "../common/ServiceCard";
-
+import { useRouter } from "next/navigation";
 const ServicesSection = () => {
+  const router = useRouter()
+  const handleOnClick = ()=>{
+    router.push("/#contact")
+  }
   return (
-    <div className="w-full bg-[#EBEBEB] py-12 overflow-hidden">
+    <div className="w-full bg-[#EBEBEB] py-12 overflow-hidden" id="services">
       <Container>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#01013A]">
@@ -29,7 +33,7 @@ const ServicesSection = () => {
           <Button
             className="bg-[#01013A] text-white hover:bg-[#00EDCF] hover:text-[#01013A] transition-all duration-500 px-6 py-3 rounded-[32px] font-semibold"
             name="Contact Us"
-            handleOnClick={() => {}}
+            handleOnClick={handleOnClick}
           />
         </div>
       </Container>

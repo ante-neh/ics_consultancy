@@ -1,11 +1,13 @@
+"use client"
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Container from "../common/Container";
 import Button from "../common/Button";
-
+import { useRouter } from "next/navigation";
 const AboutSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter()
 
   const images = [
     "/assets/students.jpeg",
@@ -37,7 +39,7 @@ const AboutSection = () => {
   }, []);
 
   const handleOnClick = () => {
-    // Handle button click
+    router.push("/about")
   };
 
   return (

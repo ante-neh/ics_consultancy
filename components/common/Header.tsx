@@ -70,6 +70,8 @@ const Header = () => {
                 key={index}
                 href={nav.href}
                 className="hover:bg-[#00EDCF] hover:rounded-lg px-4 py-2 hover:text-[#01013A] text-white font-euclid font-medium"
+                target={nav.name === "Apply" ? "_blank" : undefined}
+                rel={nav.name === "Apply" ? "noopener noreferrer" : undefined}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {nav.name}

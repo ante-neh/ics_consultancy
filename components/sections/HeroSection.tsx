@@ -4,7 +4,11 @@ import Container from "@/components/common/Container";
 import Image from "next/image";
 
 const HeroSection = () => {
-  const handleOnClick = () => {};
+
+  const handleOnClick = () => {
+
+    window.open("https://forms.gle/JnB6RwbwyLhNB4kt8", "_blank", "noopener,noreferrer");
+  };
   return (
     <Container className="mt-24 mb-12">
       <section className="bg-[#01013A] text-white flex flex-col md:flex-row items-center gap-8 w-full justify-between relative">

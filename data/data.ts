@@ -1,6 +1,6 @@
 export const navigations = [
     {
-        href:"/home",
+        href:"/",
         name:"Home",
     },
     {
@@ -8,15 +8,15 @@ export const navigations = [
         name:"About",
     },
     {
-        href:"/destinations",
+        href:"/#destinations",
         name:"Destinations",
     },
     {
-        href:"/testimonials",
+        href:"/#testemonials",
         name:"Testimonials",
     },
     {
-        href:"/apply",
+        href:"https://forms.gle/JnB6RwbwyLhNB4kt8",
         name:"Apply",
     },
     {
