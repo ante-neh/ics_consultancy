@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Container from "./Container";
-import { navigations } from "@/data/nav";
+import { navigations } from "@/data/data";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
