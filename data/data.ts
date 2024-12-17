@@ -106,3 +106,94 @@ export const services = [
   
   export default educationDestinations;
   
+
+  export const testimonials = [
+    {
+      image: "/assets/1.jpg",
+      name: "Abigiya",
+      country: "Italy",
+      level: "Bachelor's",
+      comment:
+        "Thanks to the amazing support, I successfully got admission to a top Canadian university. Highly recommend!",
+    },
+    {
+      image: "/assets/2.jpg",
+      name: "Habtamu ",
+      country: "Austria",
+      level: "Master's",
+      comment:
+        "The team made my application process seamless and stress-free. I got admitted to a prestigious Italian university!",
+    },
+    {
+      
+      image: "/assets/3.jpg",
+      name: "Eden",
+      country: "China",
+      level: "Bachelor's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/4.jpg",
+      name: "Loza",
+      country: "Southkorea",
+      level: "Bachelor's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/5.JPG",
+      name: "Bethlehem",
+      country: "USA",
+      level: "Bachelor's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/6.JPG",
+      name: "Abenezer",
+      country: "Southkorea",
+      level: "Bachelor's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/7.jpg",
+      name: "Ali Khan",
+      country: "Southkorea",
+      level: "Master's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/8.jpg",
+      name: "Fikadu",
+      country: "Southkorea",
+      level: "Master's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/9.jpg",
+      name: "Alem",
+      country: "Italy",
+      level: "Bachelor's",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+    {
+      
+      image: "/assets/10.jpg",
+      name: "Edelawit",
+      country: "Southkorea",
+      level: "PhD",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
+  ];

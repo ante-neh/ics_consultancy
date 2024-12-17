@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { FC } from "react";
-import type { StaticImageData } from "next/image";
 
 interface TestimonialCardProps {
-  image: StaticImageData;
+  image: string;
   name: string;
   country: string;
   level: string;
