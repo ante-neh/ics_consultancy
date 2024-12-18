@@ -52,26 +52,26 @@ const AccreditationSection = () => {
           </button>
         </div>
       </div>
-{selectedImage && (
-  <div
-    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[9999]"
-    onClick={() => setSelectedImage(null)} 
-  >
-    <div className="relative">
-      <button
-        className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
-        onClick={() => setSelectedImage(null)}
-      >
-        &times;
-      </button>
-      <img
-        src={selectedImage}
-        alt="Magnified Image"
-        className="object-contain rounded-lg w-[600px] h-auto"
-      />
-    </div>
-  </div>
-)}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[9999]"
+            onClick={() => setSelectedImage(null)} 
+          >
+            <div className="relative">
+              <button
+                className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
+                onClick={() => setSelectedImage(null)}
+              >
+                &times;
+              </button>
+              <img
+                src={selectedImage}
+                alt="Magnified Image"
+                className="object-contain rounded-lg w-[600px] h-auto"
+              />
+            </div>
+          </div>
+        )}
 
     </section>
   );

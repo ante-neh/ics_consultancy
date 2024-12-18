@@ -13,7 +13,7 @@ export const navigations = [
         name:"Destinations",
     },
     {
-        href:"/#testemonials",
+        href:"/#testimonials",
         name:"Testimonials",
     },
     {
@@ -30,7 +30,7 @@ export const services = [
     { id: 1, name: "Consultation with Experts", icon: "🧑‍💼" },
     { id: 2, name: "International Admission", icon: "🌍" },
     { id: 3, name: "Mentorship and Consulting", icon: "🤝" },
-    { id: 4, name: "English Test Preparation, Booking and Payment", icon: "📝" },
+    { id: 4, name: "Entestimonialsglish Test Preparation, Booking and Payment", icon: "📝" },
     { id: 5, name: "Predeparture Training", icon: "✈️" },
     { id: 6, name: "Efficient Visa Interview Training", icon: "🎓" },
     { id: 7, name: "Visa Appointment", icon: "📆" },

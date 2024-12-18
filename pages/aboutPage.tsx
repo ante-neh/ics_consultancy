@@ -74,7 +74,7 @@ const About = () => {
             </span>
           </div>
           <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VALUES</h3>
-          <ul className="text-white space-y-2 text-left">
+          <ul className="text-white space-y-2 text-center md:text-left">
             <li>✅ Customer Service</li>
             <li>✅ Commitment to Quality</li>
             <li>✅ Empowerment & Accountability</li>
