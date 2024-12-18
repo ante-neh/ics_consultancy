@@ -196,4 +196,29 @@ export const services = [
       comment:
         "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
     },
+    {
+      
+      image: "/assets/11.jpg",
+      name: "Edelawit",
+      country: "Southkorea",
+      level: "PhD",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },{
+      
+      image: "/assets/15.jpg",
+      name: "Edelawit",
+      country: "Southkorea",
+      level: "PhD",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },{
+      
+      image: "/assets/13.jpg",
+      name: "Edelawit",
+      country: "Southkorea",
+      level: "PhD",
+      comment:
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+    },
   ];
