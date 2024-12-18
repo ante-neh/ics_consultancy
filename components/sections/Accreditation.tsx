@@ -24,8 +24,6 @@ const AccreditationSection = () => {
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-8">
           ACCREDITATION & CERTIFICATIONS
         </h2>
-
-        {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {displayedAccreditations.map((item) => (
             <div
@@ -44,23 +42,20 @@ const AccreditationSection = () => {
           ))}
         </div>
 
-        {/* See All Button */}
+ 
         <div className="text-center mt-8">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300"
+            className="px-6 py-2 bg-[#00EDCF] text-white rounded-full hover:text-[#00EDCF] hover:bg-[#01013A] transition-colors duration-300"
           >
             {showAll ? "Show Less" : "See All"}
           </button>
         </div>
       </div>
-
-      {/* Modal */}
-      {/* Modal */}
 {selectedImage && (
   <div
     className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[9999]"
-    onClick={() => setSelectedImage(null)} // Close modal on outside click
+    onClick={() => setSelectedImage(null)} 
   >
     <div className="relative">
       <button

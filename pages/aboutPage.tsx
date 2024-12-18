@@ -34,47 +34,71 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-16 px-6 bg-[#01013A]">  
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div className="animate-slideInUp">
-            <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">MISSION</h3>
-            <p className="text-white leading-relaxed">
-              To give African students the opportunity to gain foreign education
-              and skills, thereby altering the African continent.
-            </p>
+      <div className="py-16 px-6 bg-[#01013A]">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+        {/* Mission */}
+        <div className="animate-slideInUp bg-[#02024B] p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+          <div className="flex justify-center mb-4">
+            <span className="text-[#00EDCF] text-4xl">
+              🚀 {/* Icon Placeholder */}
+            </span>
           </div>
+          <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">MISSION</h3>
+          <p className="text-white leading-relaxed">
+            To give African students the opportunity to gain foreign education and
+            skills, thereby altering the African continent.
+          </p>
+        </div>
 
-          <div className="animate-slideInUp delay-200">
-            <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VISION</h3>
-            <p className="text-white leading-relaxed">
-              Double Learning with half the impact. 
-              Our ambition is to democratizing education and fostering 
-              equity worldwide by revolutionizing the learning and igniting
-              passion we have a vision of empowering potential, shaping features 
-              of Ethiopia and Africa.
-            </p>
+        {/* Vision */}
+        <div className="animate-slideInUp delay-200 bg-[#02024B] p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+          <div className="flex justify-center mb-4">
+            <span className="text-[#00EDCF] text-4xl">
+              🌍 {/* Icon Placeholder */}
+            </span>
           </div>
+          <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VISION</h3>
+          <p className="text-white leading-relaxed">
+            Double Learning with half the impact. Our ambition is to democratize
+            education and foster equity worldwide by revolutionizing learning and
+            igniting passion. We envision empowering potential, shaping the future
+            of Ethiopia and Africa.
+          </p>
+        </div>
 
-          <div className="animate-slideInUp delay-400">
-            <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VALUE</h3>
-            <ul className="text-white space-y-2">
-              <li>Customer Service</li>
-              <li>Commitment to Quality</li>
-              <li>Empowerment & Accountability</li>
-              <li>Intelligent Risk-taking</li>
-              <li>Integrity & Honesty</li>
-            </ul>
+        {/* Value */}
+        <div className="animate-slideInUp delay-400 bg-[#02024B] p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+          <div className="flex justify-center mb-4">
+            <span className="text-[#00EDCF] text-4xl">
+              ⭐ {/* Icon Placeholder */}
+            </span>
           </div>
+          <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VALUES</h3>
+          <ul className="text-white space-y-2 text-left">
+            <li>✅ Customer Service</li>
+            <li>✅ Commitment to Quality</li>
+            <li>✅ Empowerment & Accountability</li>
+            <li>✅ Intelligent Risk-taking</li>
+            <li>✅ Integrity & Honesty</li>
+          </ul>
+        </div>
 
-          <div className="animate-slideInUp delay-600">
-            <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">OBJECTIVES</h3>
-            <p className="text-white leading-relaxed">
-              To help students achieve their dreams of studying abroad through
-              professional counseling, placement services, and tailored support.
-            </p>
+        {/* Objectives */}
+        <div className="animate-slideInUp delay-600 bg-[#02024B] p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+          <div className="flex justify-center mb-4">
+            <span className="text-[#00EDCF] text-4xl">
+              🎯 {/* Icon Placeholder */}
+            </span>
           </div>
+          <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">OBJECTIVES</h3>
+          <p className="text-white leading-relaxed">
+            To help students achieve their dreams of studying abroad through
+            professional counseling, placement services, and tailored support.
+          </p>
         </div>
       </div>
+    </div>
+
       <AccreditationSection/>
     </div>
   );
