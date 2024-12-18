@@ -30,7 +30,7 @@ const AccreditationSection = () => {
           {displayedAccreditations.map((item) => (
             <div
               key={item.id}
-              onClick={() => setSelectedImage(item.src)} // Open image in modal
+              onClick={() => setSelectedImage(item.src)} 
               className="flex flex-col items-center text-center transform transition-all duration-500 hover:scale-105 cursor-pointer"
             >
               <Image
@@ -40,10 +40,6 @@ const AccreditationSection = () => {
                 height={200}
                 className="object-contain shadow-lg rounded-lg"
               />
-              <p className="font-semibold mt-4">{item.title}</p>
-              {item.description && (
-                <p className="text-sm text-gray-500">{item.description}</p>
-              )}
             </div>
           ))}
         </div>
@@ -66,7 +62,7 @@ const AccreditationSection = () => {
     className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[9999]"
     onClick={() => setSelectedImage(null)} // Close modal on outside click
   >
-    <div className="relative border-4 border-red-500">
+    <div className="relative">
       <button
         className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
         onClick={() => setSelectedImage(null)}
