@@ -1,52 +1,87 @@
-// components/AccreditationSection.tsx
-
+"use client"
+import { useState } from "react";
 import Image from "next/image";
 
 const AccreditationSection = () => {
+  const accreditations = [
+    { src: "/assets/c1.png", alt: "Accreditation Badge", title: "ACCREDITATION", id: 1, description: "#123" },
+    { src: "/assets/c2.png", alt: "ITAC Certification", title: "ITAC", description: "#349", id: 2 },
+    { src: "/assets/c3.png", alt: "USCG Certification", title: "USCG", description: "#448", id: 3 },
+    { src: "/assets/c4.png", alt: "ISO Certification", title: "ISO 9001", description: "#234", id: 4 },
+    { src: "/assets/c5.png", alt: "CE Certification", title: "CE CERTIFIED", description: "#556", id: 5 },
+    { src: "/assets/c6.png", alt: "QA Certification", title: "QA VERIFIED", description: "#789", id: 6 },
+    { src: "/assets/c7.png", alt: "Safety Certification", title: "SAFETY CHECK", description: "#998", id: 7 },
+  ];
+
+  const [showAll, setShowAll] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  console.log(selectedImage)
+  const displayedAccreditations = showAll ? accreditations : accreditations.slice(0, 3);
+
   return (
     <section className="py-12 bg-[#EBEBEB]">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-20">
-        <div className="text-center">
-          <h2 className="text-lg font-semibold mb-4 text-gray-700">ACCREDITATION</h2>
-          <div className="flex justify-center">
-            <Image
-              src="/accreditation-badge.png"
-              alt="Accreditation Badge"
-              width={112} 
-              height={112}
-              className="object-contain"
-            />
-          </div>
+      <div className="container mx-auto px-4">
+        <h2 className="text-2xl font-bold text-center text-gray-700 mb-8">
+          ACCREDITATION & CERTIFICATIONS
+        </h2>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {displayedAccreditations.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => setSelectedImage(item.src)} // Open image in modal
+              className="flex flex-col items-center text-center transform transition-all duration-500 hover:scale-105 cursor-pointer"
+            >
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={200}
+                height={200}
+                className="object-contain shadow-lg rounded-lg"
+              />
+              <p className="font-semibold mt-4">{item.title}</p>
+              {item.description && (
+                <p className="text-sm text-gray-500">{item.description}</p>
+              )}
+            </div>
+          ))}
         </div>
 
-        <div className="text-center">
-          <h2 className="text-lg font-semibold mb-4 text-gray-700">CERTIFICATION</h2>
-          <div className="flex justify-center space-x-8">
-            <div className="text-center">
-              <Image
-                src="/itac-cert.png"
-                alt="ITAC Certification"
-                width={64} 
-                height={64}
-                className="object-contain mx-auto"
-              />
-              <p className="font-semibold mt-2">ITAC</p>
-              <p className="text-sm text-gray-500">#349</p>
-            </div>
-            <div className="text-center">
-              <Image
-                src="/uscg-cert.png"
-                alt="USCG Certification"
-                width={64}
-                height={64}
-                className="object-contain mx-auto"
-              />
-              <p className="font-semibold mt-2">USCG</p>
-              <p className="text-sm text-gray-500">#448</p>
-            </div>
-          </div>
+        {/* See All Button */}
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300"
+          >
+            {showAll ? "Show Less" : "See All"}
+          </button>
         </div>
       </div>
+
+      {/* Modal */}
+      {/* Modal */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-[9999]"
+    onClick={() => setSelectedImage(null)} // Close modal on outside click
+  >
+    <div className="relative border-4 border-red-500">
+      <button
+        className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
+        onClick={() => setSelectedImage(null)}
+      >
+        &times;
+      </button>
+      <img
+        src={selectedImage}
+        alt="Magnified Image"
+        className="object-contain rounded-lg w-[600px] h-auto"
+      />
+    </div>
+  </div>
+)}
+
     </section>
   );
 };

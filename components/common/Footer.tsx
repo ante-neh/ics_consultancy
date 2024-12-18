@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <div className="flex flex-col items-center md:items-start mb-4">
             <h2 className="text-3xl font-bold text-[#00EDCF] mb-2">
-              Grace Africa Scholars
+              International Student Community
             </h2>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="border-t border-gray-600 mt-6">
         <div className="container mx-auto px-6 py-4 flex justify-center items-center text-sm">
           <p className="mb-2 md:mb-0">
-            ©{new Date().getFullYear()} Grace Africa Scholars | All rights reserved
+            ©{new Date().getFullYear()} International Student Community | All rights reserved
           </p>
         </div>
       </div>

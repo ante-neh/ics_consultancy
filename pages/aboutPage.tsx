@@ -1,6 +1,5 @@
 import AccreditationSection from "@/components/sections/Accreditation";
 import Image from "next/image";
-// import Container from "@/components/common/Container";
 
 const About = () => {
   return (
@@ -9,31 +8,27 @@ const About = () => {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/images/about-illustration.png" 
+              src="/assets/graduation.jpeg" 
               alt="About Grace Africa Scholars"
               width={500}
               height={500}
-              className="mx-auto animate-fadeIn"
+              className="mx-auto animate-fadeIn rounded-lg"
               priority
             />
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold mb-6">ABOUT US</h2>
+            <h2 className="text-4xl font-bold mb-6 text-[#01013A]">ABOUT US</h2>
             <p className="text-lg leading-relaxed">
-              LEFOPS is an Ethiopian recognized service provider with License No.{" "}
-              <span className="text-[#00EDCF] font-semibold">
-                05/1/1101497
-              </span>{" "}
-              that specializes in educational, social, and professional
-              development.
+              International Student Community(ISC){" "}
             </p>
-            <p className="mt-4 text-lg leading-relaxed">
-              Since 2005, LEFOPS has assisted thousands of students in achieving
-              their educational objectives by providing effective and
-              individualized advising and placement services to great schools
-              worldwide. We aim to identify universities that suit their career
-              aspirations at a fair rate.
+            <p className="mt-4 text-lg leading-relaxed text-[#01013A]">
+                Founded on June 2021 Addis Ababa, ISC empowers students
+                across Ethiopia to reach their academic horizons. We are dedicated to providing a
+                seamless and stress-free international travel experience for our clients. We handle
+                all aspects of your journey, from securing essential documentation and visa
+                processing to arranging transportation and offering customized support
+                throughout.
             </p>
           </div>
         </div>
@@ -52,8 +47,11 @@ const About = () => {
           <div className="animate-slideInUp delay-200">
             <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">VISION</h3>
             <p className="text-white leading-relaxed">
-              To become the leading education consultants in Africa and the
-              world at large.
+              Double Learning with half the impact. 
+              Our ambition is to democratizing education and fostering 
+              equity worldwide by revolutionizing the learning and igniting
+              passion we have a vision of empowering potential, shaping features 
+              of Ethiopia and Africa.
             </p>
           </div>
 
