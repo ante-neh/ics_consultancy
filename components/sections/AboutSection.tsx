@@ -35,14 +35,15 @@ const AboutSection = () => {
       <div className="w-full h-max bg-[#EBEBEB]">
         <Container className="mt-24 relative px-16 max-w-[1300px]">
           <RevealWrapper>
-              <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-[500px] rounded-lg overflow-hidden bg-[#EBEBEB] relative z-10">
-                <div className="relative w-full h-[500px] md:h-auto">
+              <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-[500px] overflow-hidden bg-[#EBEBEB] relative z-10 py-2 rounded-xl">
+                <div className="relative w-full h-[520px] md:h-auto rounded-lg">
                   <Image
                     src={images[currentImage]}
                     alt="About Us"
                     layout="fill"
                     objectFit="cover"
                     priority
+                    className="rounded-xl"
                   />
                 </div>
 

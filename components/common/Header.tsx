@@ -33,7 +33,7 @@ const Header = () => {
       }`}
     >
       <Container className="flex justify-between py-4 items-center max-w-[1300px]">
-        <div className="h-max relative w-96">
+        <div className="h-max relative  md: w-64 lg:w-96">
           <img
             src="/assets/logoOne.png"
             alt="isc's logo"

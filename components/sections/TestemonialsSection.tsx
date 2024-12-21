@@ -14,12 +14,12 @@ const Testimonials = () => {
       setVisibleCount(testimonials.length); 
     }
   };
-
+  
   return (
-    <section className="py-16 bg-[#01013A]" id="testimonials">
+    <section className="py-16 bg-[#EBEBEB]" id="testimonials">
       <Container>
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white font-euclid">What Our Students Say</h2>
+          <h2 className="text-4xl font-bold text-[#00EDCF] font-euclid">What Our Students Say</h2>
         </div>
 
         <div className="flex flex-wrap justify-center gap-8">

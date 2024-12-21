@@ -37,7 +37,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="relative flex flex-col justify-center items-center bg-[#EBEBEB] py-12 px-6 overflow-hidden" id="contact">
+    <div className="relative flex flex-col justify-center items-center bg-[#01013A] py-12 px-6 overflow-hidden" id="contact">
       <div className="absolute top-10 left-10 w-10 h-10 bg-[#00EDCF] rounded-full animate-bounce"></div>
       <div className="absolute bottom-20 right-16 w-6 h-6 bg-[#00EDCF] rounded-full animate-pulse"></div>
       <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-[#00EDCF] rounded-full animate-bounce"></div>
