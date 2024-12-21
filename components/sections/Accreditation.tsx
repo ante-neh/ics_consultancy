@@ -1,9 +1,14 @@
 "use client"
 import { useState } from "react";
 import Image from "next/image";
-import { RevealWrapper } from "next-reveal";
+import { useEffect } from "react";
+import { init as initAOS } from "aos"; // Import AOS initialization
+import "aos/dist/aos.css";
 
 const AccreditationSection = () => {
+  useEffect(() => {
+    initAOS({ duration: 3000, delay: 600 });
+  }, []);
   const accreditations = [
     { src: "/assets/c1.jpg", alt: "Accreditation Badge", title: "ACCREDITATION", id: 1, description: "#123" },
     { src: "/assets/c2.jpg", alt: "ITAC Certification", title: "ITAC", description: "#349", id: 2 },
@@ -14,8 +19,7 @@ const AccreditationSection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <RevealWrapper origin="bottom" duration={3000} distance="100px" delay={600} reset={true}>
-      <section className="py-12 bg-[#EBEBEB]">
+      <section className="py-12 bg-[#EBEBEB]" data-aos="fade-up">
         
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center text-gray-700 mb-8">
@@ -28,6 +32,7 @@ const AccreditationSection = () => {
                     key={item.id}
                     onClick={() => setSelectedImage(item.src)} 
                     className="flex flex-col items-center text-center transform transition-all duration-500 hover:scale-105 cursor-pointer"
+                    data-aos="zoom-in"
                   >
                     <Image
                       src={item.src}
@@ -62,9 +67,6 @@ const AccreditationSection = () => {
           )}
 
       </section>
-
-
-    </RevealWrapper>
   );
 };
 

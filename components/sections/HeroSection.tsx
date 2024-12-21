@@ -7,7 +7,7 @@ import { RevealWrapper } from "next-reveal";
 const HeroSection = () => {
   const handleOnClick = () => {
 
-    window.open("https://forms.gle/JnB6RwbwyLhNB4kt8", "_blank", "noopener,noreferrer");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSe3_A_ZFSFk-aZ5bHAdVn9TZ9F2asXdjFhaBf2uM6nC4hdXEw/viewform", "_blank", "noopener,noreferrer");
   };
   return (
       <section className="mt-24 mb-12">

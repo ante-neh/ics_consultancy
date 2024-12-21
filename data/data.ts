@@ -17,7 +17,7 @@ export const navigations = [
         name:"Testimonials",
     },
     {
-        href:"https://forms.gle/JnB6RwbwyLhNB4kt8",
+        href:"/apply",
         name:"Apply",
     },
     {
@@ -163,7 +163,7 @@ export const services = [
     {
       
       image: "/assets/7.jpg",
-      name: "Ali Khan",
+      name: "Tayesew Cherenet",
       country: "Southkorea",
       level: "Master's in",
       comment:
