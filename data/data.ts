@@ -30,7 +30,7 @@ export const services = [
     { id: 1, name: "Consultation with Experts", icon: "🧑‍💼" },
     { id: 2, name: "International Admission", icon: "🌍" },
     { id: 3, name: "Mentorship and Consulting", icon: "🤝" },
-    { id: 4, name: "Entestimonialsglish Test Preparation, Booking and Payment", icon: "📝" },
+    { id: 4, name: "English Test Preparation, Booking and Payment", icon: "📝" },
     { id: 5, name: "Predeparture Training", icon: "✈️" },
     { id: 6, name: "Efficient Visa Interview Training", icon: "🎓" },
     { id: 7, name: "Visa Appointment", icon: "📆" },
@@ -112,113 +112,113 @@ export const services = [
       image: "/assets/1.jpg",
       name: "Abigiya",
       country: "Italy",
-      level: "Bachelor's",
+      level: "Bachelor's in",
       comment:
-        "Thanks to the amazing support, I successfully got admission to a top Canadian university. Highly recommend!",
+        "ISC made my dream of studying in Italy a reality. Navigating the visa process felt overwhelming at first, but the team at ISC guided me every step of the way. From helping me gather the correct documents to preparing for my interview, they ensured everything was handled with precision and care. Thanks to their expertise and unwavering support, I successfully secured my visa for a Bachelor's program in Italy",
     },
     {
       image: "/assets/2.jpg",
       name: "Habtamu ",
       country: "Austria",
-      level: "Master's",
+      level: "Master's in",
       comment:
-        "The team made my application process seamless and stress-free. I got admitted to a prestigious Italian university!",
+        "ISC transformed what once seemed like an unreachable goal into a tangible reality. Their guidance was thorough, and their encouragement unwavering. More than just offering practical support, ISC created a sense of belonging that made the entire process less daunting. Today, I am pursuing my Master’s degree in Austria, an opportunity I couldn’t have achieved without ISC’s expertise and care.",
     },
     {
       
       image: "/assets/3.jpg",
       name: "Eden",
       country: "China",
-      level: "Bachelor's",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "Thanks to ISC, I am now pursuing my Bachelor’s degree in China—a dream I once thought was out of reach. Their unwavering support and expert guidance made this milestone achievable, and I’m deeply appreciative of the life-changing opportunities they’ve opened up for me.",
     },
     {
       
       image: "/assets/4.jpg",
       name: "Loza",
-      country: "Southkorea",
-      level: "Bachelor's",
+      country: "South Korea",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "With ISC’s exceptional support and guidance, I am now pursuing my Bachelor’s degree in South Korea.I’m profoundly grateful for the doors they’ve opened and the opportunities they’ve made possible",
     },
     {
       
       image: "/assets/5.JPG",
       name: "Bethlehem",
       country: "USA",
-      level: "Bachelor's",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "ISC was instrumental in turning my aspirations into reality. Their dedicated support and tailored guidance helped me navigate every challenge, making the process smoother and less overwhelming. Thanks to their efforts, I am now pursuing my Bachelor’s degree in the USA. I’m truly thankful for the opportunities ISC has unlocked and the confidence they’ve instilled in me.",
     },
     {
       
       image: "/assets/6.JPG",
       name: "Abenezer",
-      country: "Southkorea",
-      level: "Bachelor's",
+      country: "South Korea",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "ISC played a pivotal role in helping me achieve my dream of studying abroad. Their expertise, combined with their genuine care, made the entire journey—from applications to securing my visa—so much easier. Now, I’m proud to say I’m pursuing my Bachelor’s degree in South Korea",
     },
     {
       
       image: "/assets/7.jpg",
       name: "Ali Khan",
       country: "Southkorea",
-      level: "Master's",
+      level: "Master's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "The idea of studying abroad felt daunting until ISC stepped in with their unparalleled support. They didn’t just guide me—they empowered me to navigate every hurdle with confidence. Today, I am thrilled to be pursuing my Master’s degree in South Korea, a milestone I couldn’t have achieved without their dedication and encouragement",
     },
     {
       
       image: "/assets/8.jpg",
       name: "Fikadu",
-      country: "Southkorea",
-      level: "Master's",
+      country: "South Korea",
+      level: "Master's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "ISC’s expertise and encouragement transformed my ambitions into reality. Thanks to their support, I am now pursuing my Master’s degree in South Korea, a step that has redefined my future.",
     },
     {
       
       image: "/assets/9.jpg",
       name: "Alem",
       country: "Italy",
-      level: "Bachelor's",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "ISC didn’t just open doors to education abroad; they also provided the confidence and community I needed to take this life-changing step. I’m forever grateful to ISC for making my aspirations come true.",
     },
     {
       
       image: "/assets/10.jpg",
-      name: "Edelawit",
-      country: "Southkorea",
-      level: "PhD",
+      name: "Seminar",
+      country: "South Korea",
+      level: "Bachelor's in",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "Their expert guidance ensured that I aced my visa interview and got admitted for my Bachelor's  in South Korea!",
     },
     {
       
       image: "/assets/11.jpg",
-      name: "Edelawit",
-      country: "Southkorea",
-      level: "PhD",
+      name: "Seminar",
+      country: " ",
+      level: "With high school students",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "Before attending ISC’s seminar, I had so many questions and fears about studying abroad. The process felt confusing and overwhelming. But during the session, they explained everything in such a clear and relatable way. Now, I feel much more confident about pursuing my education abroad, and I know where to start. ISC truly opened my eyes to the opportunities that are possible",
     },{
       
       image: "/assets/15.jpg",
-      name: "Edelawit",
-      country: "Southkorea",
-      level: "PhD",
+      name: "Seminar",
+      country: "",
+      level: "With high school students",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "Before attending ISC’s seminar, I had so many questions and fears about studying abroad. The process felt confusing and overwhelming. But during the session, they explained everything in such a clear and relatable way. Now, I feel much more confident about pursuing my education abroad, and I know where to start. ISC truly opened my eyes to the opportunities that are possible.",
     },{
       
       image: "/assets/13.jpg",
-      name: "Edelawit",
-      country: "Southkorea",
-      level: "PhD",
+      name: "Seminar",
+      country: "",
+      level: "With high school students",
       comment:
-        "Their expert guidance ensured that I aced my visa interview and got admitted for my PhD program in Germany!",
+        "I came into the seminar feeling unsure about whether studying abroad was even possible for someone like me. ISC not only gave me practical information but also inspired me with real examples of students who made it. I left the session feeling excited and prepared to take on the challenges ahead. They’ve made a huge difference in how I view my future.",
     },
   ];

@@ -89,7 +89,7 @@ const ContactPage = () => {
       </div>
 
       <div className="flex justify-center gap-4 mt-6">
-        <Link href="https://www.facebook.com/share/1CXtgFq96w/?mibextid=LQQJ4d" aria-label="Facebook">
+        <Link href="https://www.facebook.com/share/15XqasaVHQ/?mibextid=wwXIfr" aria-label="Facebook">
           <Image
             src="/assets/facebook.png"
             alt="Facebook"
@@ -97,15 +97,15 @@ const ContactPage = () => {
             height={30}
           />
         </Link>
-        <Link href="https://www.instagram.com/grace_africa_scholars/profilecard/?igsh=bnBhOHhjdmloNHhj" aria-label="Instagram">
+        {/* <Link href="https://www.instagram.com/grace_africa_scholars/profilecard/?igsh=bnBhOHhjdmloNHhj" aria-label="Instagram">
           <Image
             src="/assets/instagram.png"
             alt="Instagram"
             width={30}
             height={30}
           />
-        </Link>
-        <Link href="https://www.tiktok.com/@grace_africa_scholar" aria-label="Twitter">
+        </Link> */}
+        <Link href="https://www.tiktok.com/@international_student_et" aria-label="Twitter">
           <Image
             src="/assets/tiktok.png"
             alt="tiktok"
@@ -113,7 +113,7 @@ const ContactPage = () => {
             height={30}
           />
         </Link>
-        <Link href="https://t.me/graceconsultancy" aria-label="YouTube">
+        <Link href="https://t.me/isc_italy" aria-label="YouTube">
           <Image
             src="/assets/telegram.png"
             alt="YouTube"

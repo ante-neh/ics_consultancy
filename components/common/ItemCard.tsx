@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ItemCard : FC<{name:string, description:string, imageSrc:string}>= ({name, description, imageSrc}) => {
   return (
-    <div className="w-[250px] h-[300px] mx-4 rounded-lg bg-transparent cursor-pointer group perspective">
+    <div className="w-[250px] h-[300px] mx-4 rounded-lg bg-transparent cursor-pointer group perspective bg-blue-600">
       <div
           className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000"
         >

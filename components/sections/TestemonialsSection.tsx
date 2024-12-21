@@ -16,10 +16,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-16 bg-[#00EDCF]" id="testimonials">
+    <section className="py-16 bg-[#01013A]" id="testimonials">
       <Container>
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#01013A]">What Our Students Say</h2>
+          <h2 className="text-4xl font-bold text-white font-euclid">What Our Students Say</h2>
         </div>
 
         <div className="flex flex-wrap justify-center gap-8">
@@ -38,7 +38,7 @@ const Testimonials = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={toggleVisibility}
-            className="px-6 py-3 bg-[#01013A] text-white rounded-lg hover:bg-[#007769] transition-all duration-300"
+            className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 hover:bg-[#00CBAE] transition rounded-[64px]"
           >
             {isExpanded ? "See Less" : "See More"}
           </button>

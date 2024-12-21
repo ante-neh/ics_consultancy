@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import Container from "./Container";
 import { navigations } from "@/data/data";
 import Link from "next/link";
@@ -32,15 +32,14 @@ const Header = () => {
         isScrolled ? "bg-[#01013A]/70 backdrop-blur-lg" : "bg-transparent"
       }`}
     >
-      <Container className="flex justify-between py-4 items-center">
-        <Image
-          src="/assets/logo.svg"
-          width={80}
-          height={80}
-          alt="isc's logo"
-          priority
-        />
-        <nav className="hidden md:flex gap-4 items-center">
+      <Container className="flex justify-between py-4 items-center max-w-[1300px]">
+        <div className="h-max relative w-96">
+          <img
+            src="/assets/logoOne.png"
+            alt="isc's logo"
+          />
+        </div>
+        <nav className="hidden md:flex md:gap-1 xl:gap-4 items-center">
           {navigations.map((nav, index) => (
             <Link
               key={index}

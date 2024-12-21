@@ -4,9 +4,11 @@ import Image from "next/image";
 import Container from "../common/Container";
 import Button from "../common/Button";
 import { useRouter } from "next/navigation";
+import { RevealWrapper } from "next-reveal";
+
+
 const AboutSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter()
 
   const images = [
@@ -24,73 +26,48 @@ const AboutSection = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
- 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const handleOnClick = () => {
     router.push("/about")
   };
 
   return (
-    <div className="w-full h-max bg-[#00EDCF]">
-      <Container className="mt-24 mb-12 relative px-16">
-        <div
-          className={`absolute left-4 top-[50%] transform -translate-y-[50%] transition-all z-50 duration-700 ease-in-out ${
-            isScrolled ? "translate-x-[-50%]" : "translate-x-0"
-          }`}
-        >
-          <span className="text-xl sm:text-3xl md:text-4xl">✈️</span>
-        </div>
+      <div className="w-full h-max bg-[#EBEBEB]">
+        <Container className="mt-24 relative px-16 max-w-[1300px]">
+          <RevealWrapper>
+              <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-[500px] rounded-lg overflow-hidden bg-[#EBEBEB] relative z-10">
+                <div className="relative w-full h-[500px] md:h-auto">
+                  <Image
+                    src={images[currentImage]}
+                    alt="About Us"
+                    layout="fill"
+                    objectFit="cover"
+                    priority
+                  />
+                </div>
 
-        <div
-          className={`absolute right-4 top-[50%] transform -translate-y-[50%] transition-all z-50 duration-700 ease-in-out ${
-            isScrolled ? "translate-x-[50%]" : "translate-x-0"
-          }`}
-        >
-          <span className="text-xl sm:text-3xl md:text-4xl">📚</span>
-        </div>
+                <div className="relative flex flex-col justify-center items-center p-4 md:p-8  w-full  text-[#00EDCF]">
+                  <h3 className="text-3xl md:text-4xl font-bold text-[#00EDCF] mb-4 text-center md:text-left">
+                    About Us
+                  </h3>
+                  <p className="text-lg leading-relaxed mb-6 text-[#01013A] text-center md:text-left">
+                  The International Student Community (ISC) is a pioneering organization founded by Ethiopian students in Italy to empower
+                  Ethiopian students to achieve their academic dreams on a global scale.
+                  Established with the vision of bridging the gap between ambition and opportunity,
+                  ISC supports students aspiring to study abroad through a comprehensive network of resources, 
+                  professional counseling, and a vibrant community.
+                  </p>
+                  <Button
+                    className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 hover:bg-[#00CBAE] self-start transition rounded-[64px]"
+                    handleOnClick={handleOnClick}
+                    name="See More"
+                  />
+                </div>
+              </section>
+          </RevealWrapper>
+        </Container>
+      </div>
 
-        <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-[500px] rounded-lg overflow-hidden bg-[#01013A] relative z-10">
-          <div className="relative w-full h-[500px] md:h-auto">
-            <Image
-              src={images[currentImage]}
-              alt="About Us"
-              layout="fill"
-              objectFit="cover"
-              priority
-            />
-          </div>
-
-          <div className="relative flex flex-col justify-center items-center p-4 md:p-8  w-full bg-[#00EDCF] text-white">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#01013A] mb-4">
-              About Us
-            </h3>
-            <p className="text-lg leading-relaxed mb-6 text-[#01013A]  text-start">
-              Founded in June 2021 Addis Ababa, Grace Africa Scholars empowers
-              students across Ethiopia to reach their academic horizons. We are
-              dedicated to providing a seamless and stress-free international
-              travel experience for our clients.
-            </p>
-            <Button
-              className="rounded-[64px] border-2 border-[#01013A] px-4 py-0.5 hover:bg-[#01013A] transition text-blue-500 hover:text-white"
-              handleOnClick={handleOnClick}
-              name="See More"
-            />
-          </div>
-        </section>
-      </Container>
-    </div>
   );
 };
 
