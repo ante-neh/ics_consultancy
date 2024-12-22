@@ -32,13 +32,13 @@ const HeroSection = () => {
                 </div>
             </RevealWrapper>
             <RevealWrapper origin="bottom" distance="60px" duration={3000} delay={300} reset={true}>
-                <div className="relative w-full sm:w-[430px] lg:w-[492px] h-[300px] sm:h-[400px] flex-shrink-0 mx-auto md:mx-0 hero_image">
+                <div className="relative w-full sm:w-[530px] lg:w-[592px] h-[400px] sm:h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
                   <Image
-                    src="/assets/landingPageImage.svg"
+                    src="/assets/hero_with_out_background.png"
                     alt="Students"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg"
+                    className="rounded-lg "
                   />
 
                   <div className="absolute top-[-16px] left-[80px] h-8 w-8 sm:h-10 sm:w-10 bg-white p-1 sm:p-2 rounded-full grid place-content-center shadow-md">

@@ -21,10 +21,10 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   return (
     <div
       className={`relative flex flex-col items-center p-0 w-full md:w-[300px] lg:w-[350px] bg-[#01013A] rounded-lg shadow-lg backdrop-blur-md transition-transform duration-700 hover:scale-105 overflow-hidden ${
-        isExpanded ? "h-auto" : "h-[500px]"
+        isExpanded ? "h-auto" : "h-auto"
       }`}
     >
-      <div className="relative w-full h-[250px] md:h-[300px] lg:h-[350px]">
+      <div className="relative w-full h-[270px] md:h-[350px] lg:h-[450px]">
         <Image
           src={image}
           alt={name}

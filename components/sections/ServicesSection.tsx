@@ -28,7 +28,7 @@ const ServicesSection = () => {
         <RevealList origin="bottom" interval={200} duration={2000} delay={200}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service) => (
-                <ServiceCard icon={service.icon} name={service.name} key={service.id}/>
+                <ServiceCard icon={service.icon} name={service.name} key={service.id} description={service.description}/>
               ))}
             </div>
 

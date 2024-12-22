@@ -1,3 +1,15 @@
+import giving from "../public/assets/giving.png"
+import diversity from '../public/assets/diversity.png'
+import racisim from "../public/assets/racisim.png"
+import problemSolving from '../public/assets/problemSolving.png'
+import applicationProcess from "../public/assets/applicationProcess.png"
+import visaProcessing from "../public/assets/visaProcessing.png"
+import predepartureSupport from "../public/assets/predepartureSupport.png"
+import arrival from "../public/assets/arrival.png"
+import job from "../public/assets/job.png"
+import donation from "../public/assets/donation.png"
+import collaboration from "../public/assets/collaboration.png"
+import support from "../public/assets/support.png"
 
 export const navigations = [
     {
@@ -26,19 +38,83 @@ export const navigations = [
     },
 ]
 
+
+
 export const services = [
-    { id: 1, name: "Consultation with Experts", icon: "🧑‍💼" },
-    { id: 2, name: "International Admission", icon: "🌍" },
-    { id: 3, name: "Mentorship and Consulting", icon: "🤝" },
-    { id: 4, name: "English Test Preparation, Booking and Payment", icon: "📝" },
-    { id: 5, name: "Predeparture Training", icon: "✈️" },
-    { id: 6, name: "Efficient Visa Interview Training", icon: "🎓" },
-    { id: 7, name: "Visa Appointment", icon: "📆" },
-    { id: 8, name: "Document Preparation & Legalization", icon: "📑" },
-    { id: 9, name: "Visitation Visa Consulting & Processing", icon: "🛂" },
-    { id: 10, name: "Scholarship Application", icon: "🏫" },
-    { id: 11, name: "Accommodation Booking", icon: "🏠" },
-  ];
+  {
+    id: 1,
+    name: "Cultural Integration",
+    description: "Creating a welcoming space for Ethiopian students to adapt to new cultures and share experiences.",
+    icon: diversity,
+  },
+  {
+    id: 2,
+    name: "Racial and Cultural Support",
+    description: "Providing peer support and advocacy to help students navigate challenges related to race and ethnicity.",
+    icon: racisim,
+  },
+  {
+    id: 3,
+    name: "Collective Problem Solving",
+    description: "Encouraging students to collaborate on addressing academic, housing, and social challenges.",
+    icon: problemSolving,
+  },
+  {
+    id: 4,
+    name: "Guiding the Application Process",
+    description: "Comprehensive assistance with university applications, personal statements, and scholarships.",
+    icon: applicationProcess,
+  },
+  {
+    id: 5,
+    name: "Visa and Immigration Assistance",
+    description: "Guiding students through visa applications and immigration processes for successful outcomes.",
+    icon: visaProcessing,
+  },
+  {
+    id: 6,
+    name: "Pre-Departure Support",
+    description: "Workshops and guidance on travel, finances, and managing cultural shock before leaving Ethiopia.",
+    icon: predepartureSupport,
+  },
+  {
+    id: 7,
+    name: "Post-Arrival Assistance",
+    description: "Helping students settle in, find accommodation, and connect with local support networks.",
+    icon: arrival,
+  },
+  {
+    id: 8,
+    name: "Part-Time Job Opportunities & Tutoring",
+    description: "Assisting students in finding part-time work and balancing academics through tutoring services.",
+    icon: job,
+  },
+  {
+    id: 9,
+    name: "Fundraising and Donations",
+    description: "Mobilizing resources to support underprivileged communities through impactful charitable projects.",
+    icon: donation,
+  },
+  {
+    id: 10,
+    name: "Collaboration with Companies and NGOs",
+    description: "Partnering with organizations to create sustainable programs for Ethiopian communities.",
+    icon: collaboration,
+  },
+  {
+    id: 11,
+    name: "Supporting the Poor and Vulnerable",
+    description: "Providing scholarships, healthcare, and essential services to uplift underprivileged families.",
+    icon: support,
+  },
+  {
+    id: 12,
+    name: "Creating a Giving Culture",
+    description: "Fostering empathy and solidarity among Ethiopian students to inspire positive change.",
+    icon: giving,
+  },
+];
+
 
 
   const educationDestinations = [

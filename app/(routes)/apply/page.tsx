@@ -178,7 +178,7 @@ const CountryRequirements = () => {
         <div className="bg-white rounded-lg shadow-lg p-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image */}
-            <div className="relative w-full h-64 rounded-lg overflow-hidden">
+            <div className="relative w-full h-44 smd:h-64 lg:h-96 rounded-lg overflow-hidden">
               <Image
                 src={selectedCountry.image}
                 alt={selectedCountry.country}

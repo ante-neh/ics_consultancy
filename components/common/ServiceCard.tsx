@@ -1,30 +1,30 @@
-import { FC } from "react"
+import Image, { StaticImageData } from "next/image";
+import { FC } from "react";
 
-const ServiceCard : FC<{ icon:string, name:string }> = ({name, icon}) => {
+const ServiceCard: FC<{ icon: string | StaticImageData; name: string , description: string}> = ({ name, icon, description }) => {
   return (
-    <div
-    className="group bg-[#01013A] text-white p-6 rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-105 relative overflow-hidden"
-   >
-    
+    <div className="group relative bg-blue-600 text-white p-6 rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-105 overflow-hidden">
+      {/* Floating Background Icon */}
       <div
-        className={`absolute -top-6 -left-6 text-6xl text-center opacity-10 group-hover:opacity-20 transition-all duration-500`}
+        className={`absolute -top-6 -left-6 opacity-10 group-hover:opacity-30 transition-opacity duration-700 text-white`}
       >
-        {icon}
+        <Image width={60} height={60} src={icon} alt={`${name} icon`} />
       </div>
-    
 
-    <div className="relative z-10">
-      <div className="text-3xl text-center mb-4 group-hover:animate-bounce">
-        {icon}
+      {/* Main Content */}
+      <div className="relative z-10">
+        {/* Icon Animation */}
+        <div className="flex justify-center items-center text-3xl mb-4 group-hover:animate-spin-slow">
+          <Image width={60} height={60} src={icon} alt={`${name} icon`} />
+        </div>
+        {/* Title with Underline Animation */}
+        <h3 className="text-xl font-bold text-center mb-2 relative after:absolute after:w-0 after:h-[3px] after:bg-[#00EDCF] after:bottom-0 after:left-0 after:transition-all after:duration-500 group-hover:after:w-full">
+          {name}
+        </h3>
+        <p>{description}</p>
       </div>
-      <h3 className="text-xl font-bold mb-2">{name}</h3>
-      <p className="text-sm opacity-80">
-        We ensure the highest quality service for{" "}
-        {name.toLowerCase()}.
-      </p>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;
