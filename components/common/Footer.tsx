@@ -24,36 +24,36 @@ const Footer = () => {
             <p>
               <strong>Ethiopia:</strong> Addis Ababa, Bitweded Bahiru Building <br />
               Phone: +251934146000 <br />
-              <Link
+              {/* <Link
                 href="https://goo.gl/maps/abcdef123456"
                 className="text-[#00EDCF] hover:underline"
               >
                 View on Google Maps
-              </Link>
+              </Link> */}
             </p>
 
             {/* Italy */}
             <p className="mt-4">
               <strong>Italy:</strong> Viale. 03043 Cassino, Province of Frosinone <br />
               Phone: +393517966376 <br />
-              <Link
+              {/* <Link
                 href="https://goo.gl/maps/abcdef123456"
                 className="text-[#00EDCF] hover:underline"
               >
                 View on Google Maps
-              </Link>
+              </Link> */}
             </p>
 
             {/* Malaysia */}
             <p className="mt-4">
               <strong>Malaysia:</strong> Neu Suites Jalan Ampang | 55000, Kuala Lumpur <br />
               Phone: +60 16 446 8149 <br />
-              <Link
+              {/* <Link
                 href="https://goo.gl/maps/abcdef123456"
                 className="text-[#00EDCF] hover:underline"
               >
                 View on Google Maps
-              </Link>
+              </Link> */}
             </p>
           </div>
 

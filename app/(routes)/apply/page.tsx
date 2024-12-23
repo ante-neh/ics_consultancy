@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Button from "@/components/common/Button";
 
 const countryData = [
   {
@@ -129,7 +130,7 @@ const countryData = [
   },
   {
     country: "Cyprus",
-    image: "/images/cypres.jpg",
+    image: "/assets/cypres.jpeg",
     bachelors: [
       "Passport",
       "Transcript from grades 9–12",
@@ -144,18 +145,87 @@ const countryData = [
       "Statement of purpose",
     ],
   },
+  {
+    country: "Netherlands",
+    image: "/assets/netherlands.webp",
+    bachelors: [
+      "Passport",
+      "Transcript from grade 9–12 (above 80%)",
+      "University entrance result 500 and above",
+      "English proficiency test results (e.g., IELTS or TOEFL)",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+    ],
+    masters: [
+      "Passport",
+      "English proficiency test results (e.g., IELTS or TOEFL)",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+      "Student copy and original degree",
+      "Work experience with recommendations",
+    ],
+  },
+  {
+    country: "Hungary",
+    image: "/assets/hungary.jpeg",
+    bachelors: [
+      "Passport",
+      "Transcript from grade 9–12",
+      "University entrance result must be pass",
+      "Medium of instruction certificate from high school",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+    ],
+    masters: [
+      "Passport",
+      "Medium of instruction certificate",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+      "Student copy and original degree",
+      "Work experience with recommendations",
+    ],
+  },
+  {
+    country: "Malta",
+    image: "/assets/malta.jpeg",
+    bachelors: [
+      "Passport",
+      "Transcript from grade 9–12",
+      "University entrance result",
+      "Medium of instruction certificate from high school",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+    ],
+    masters: [
+      "Passport",
+      "Medium of instruction certificate",
+      "Recommendation letters (at least 2)",
+      "Certificates of charity activities",
+      "Student copy and original degree",
+      "Work experience with recommendations",
+    ],
+  },
 ];
+
 
 
 const CountryRequirements = () => {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
+  const handleOnClick = () => {
 
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSe3_A_ZFSFk-aZ5bHAdVn9TZ9F2asXdjFhaBf2uM6nC4hdXEw/viewform", "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="bg-[#EBEBEB] py-12 px-6 text-[#01013A]">
       <div className="max-w-[1200px] mx-auto">
         <h2 className="text-4xl font-bold text-center text-[#00EDCF] mb-8">
           Country Requirements
         </h2>
+        <Button
+            className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 mb-4 hover:bg-[#00CBAE] transition rounded-[64px]"
+            handleOnClick={handleOnClick}
+            name="Apply"
+        />
 
         {/* Country Selection */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -175,10 +245,10 @@ const CountryRequirements = () => {
         </div>
 
         {/* Country Details */}
-        <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="bg-white rounded-lg shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image */}
-            <div className="relative w-full h-44 smd:h-64 lg:h-96 rounded-lg overflow-hidden">
+            <div className="relative w-full h-44 smd:h-64 lg:h-full rounded-lg overflow-hidden">
               <Image
                 src={selectedCountry.image}
                 alt={selectedCountry.country}
@@ -189,7 +259,7 @@ const CountryRequirements = () => {
             </div>
 
             {/* Requirements */}
-            <div>
+            <div className="p-4">
               <h3 className="text-2xl font-bold text-[#00EDCF] mb-4">
                 {selectedCountry.country}
               </h3>
@@ -198,7 +268,7 @@ const CountryRequirements = () => {
                 {/* Bachelors Section */}
                 <div>
                   <h4 className="text-xl font-semibold mb-3">
-                    Bachelor&aposs Requirements
+                    Bachelor&apos;s Requirements
                   </h4>
                   <ul className="list-disc pl-5 text-lg space-y-2">
                     {selectedCountry.bachelors.map((item, index) => (
@@ -210,7 +280,7 @@ const CountryRequirements = () => {
                 {/* Masters Section */}
                 <div>
                   <h4 className="text-xl font-semibold mb-3">
-                    Master&aposs Requirements
+                    Master&apos;s Requirements
                   </h4>
                   <ul className="list-disc pl-5 text-lg space-y-2">
                     {selectedCountry.masters.map((item, index) => (
