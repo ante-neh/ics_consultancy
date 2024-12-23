@@ -33,17 +33,17 @@ export default function Home() {
       <HeroSection />
 
       {/* About Section */}
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <AboutSection />
       </div>
 
       {/* Services Section */}
-      <div data-aos="fade-right">
+      <div data-aos="fade-up">
         <ServicesSection />
       </div>
 
       {/* Destinations Section */}
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <DestinationsSection />
       </div>
 
@@ -53,7 +53,7 @@ export default function Home() {
       </div>
 
       {/* Contact Page */}
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <ContactPage />
       </div>
 

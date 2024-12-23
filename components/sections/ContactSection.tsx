@@ -1,38 +1,29 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { sendEmail } from "@/lib/sendEmail";
 
 const ContactPage = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [isSent, setIsSent] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          "YOUR_SERVICE_ID", 
-          "YOUR_TEMPLATE_ID", 
-          form.current,
-          "YOUR_PUBLIC_KEY"
-        )
-        .then(
-          () => {
-            setLoading(false);
-            setIsSent(true);
-            form.current?.reset();
-          },
-          (error) => {
-            console.log(error)
-            setLoading(false);
-          }
-        );
+      const formData = new FormData(form.current);
+
+      try {
+        const response = await sendEmail(formData);
+        if (response.success) {
+          alert("Message sent successfully!");
+        } else {
+          alert("Failed to send message: " + response.message);
+        }
+      } catch (error) {
+        console.error("Error sending email:", error);
+        alert("An unexpected error occurred. Please try again.");
+      }
     }
   };
 
@@ -46,7 +37,7 @@ const ContactPage = () => {
           CONTACT US
         </h2>
 
-        <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form ref={form} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <input
             type="text"
             name="user_name"
@@ -74,18 +65,12 @@ const ContactPage = () => {
             <button
               type="submit"
               className="bg-[#01013A] text-white px-8 py-2 rounded-lg hover:bg-[#00EDCF] hover:text-[#01013A] transition"
-              disabled={loading}
+              
             >
-              {loading ? "Sending..." : "Submit"}
+              Submit
             </button>
           </div>
         </form>
-
-        {isSent && (
-          <p className="text-center mt-4 text-[#00EDCF] font-semibold">
-            Your message has been sent successfully!
-          </p>
-        )}
       </div>
 
       <div className="flex justify-center gap-4 mt-6">
