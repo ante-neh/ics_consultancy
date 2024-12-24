@@ -32,7 +32,7 @@ const HeroSection = () => {
                 </div>
             </RevealWrapper>
             <RevealWrapper origin="bottom" distance="60px" duration={3000} delay={300} reset={true}>
-                <div className="relative w-full sm:w-[530px] lg:w-[592px] h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
+                <div className="relative w-[530px] lg:w-[592px] h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
                   <Image
                     src="/assets/hero.png"
                     alt="Students"

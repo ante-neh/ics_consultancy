@@ -35,8 +35,8 @@ const AboutSection = () => {
       <div className="w-full h-max bg-[#EBEBEB]">
         <Container className="mt-24 relative px-16 max-w-[1300px]">
           <RevealWrapper>
-              <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-[500px] overflow-hidden bg-[#EBEBEB] relative z-10 py-2 rounded-xl">
-                <div className="relative w-full h-[520px] md:h-auto rounded-lg">
+              <section className="flex flex-col md:flex-row items-center md:items-stretch w-full h-max overflow-hidden bg-[#EBEBEB] relative z-10 py-2 rounded-xl">
+                <div className="relative w-full h-[500px] rounded-lg">
                   <Image
                     src={images[currentImage]}
                     alt="About Us"
@@ -47,7 +47,7 @@ const AboutSection = () => {
                   />
                 </div>
 
-                <div className="relative flex flex-col justify-center items-center p-4 md:p-8  w-full  text-[#00EDCF]">
+                <div className="relative flex flex-col justify-center items-center p-4 md:p-8  w-full   text-[#00EDCF]">
                   <h3 className="text-3xl md:text-4xl font-bold text-[#00EDCF] mb-4 text-center md:text-left font-montserrat">
                     About Us
                   </h3>
