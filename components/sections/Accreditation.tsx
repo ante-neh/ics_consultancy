@@ -22,7 +22,7 @@ const AccreditationSection = () => {
       <section className="py-12 bg-[#EBEBEB]" data-aos="fade-up">
         
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center text-gray-700 mb-8">
+          <h2 className="text-2xl font-bold text-center text-gray-700 mb-8 font-montserrat">
             ACCREDITATION & CERTIFICATIONS
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

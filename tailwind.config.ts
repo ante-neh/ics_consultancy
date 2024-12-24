@@ -73,7 +73,8 @@ export default {
   			euclid: [
   				'Euclid Circular A',
   				'sans-serif'
-  			]
+  			],
+			montserrat: ['"Montserrat"', 'sans-serif']
   		},
   		lineHeight: {
   			'20.29': '20.29px'

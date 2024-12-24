@@ -11,42 +11,42 @@ const HeroSection = () => {
   };
   return (
       <section className="mt-24 mb-12">
-        <Container className="bg-[#01013A] max-w-[1300px]">
-          <div className="w-full text-white flex flex-col md:flex-row items-center justify-between relative mx-auto">
+        <Container className="bg-[#01013A] max-w-[1300px] gap-12">
+          <div className="w-full text-white flex flex-col md:flex-row items-center gap-12 justify-between relative mx-auto">
             <RevealWrapper origin="top" distance="60px" duration={3000} delay={300} reset={true}>
                 <div className="max-w-[550px] text-center md:text-left hero_text">
-                  <h2 className="text-2xl sm:text-6xl leading-tight font-euclid font-semibold">
+                  <h2 className="text-2xl sm:text-6xl leading-tight font-semibold font-montserrat">
                     Your trusted <br />
                     education <span className="text-[#00EDCF]">advisor!</span>
                   </h2>
-                  <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-300 font-medium">
+                  <p className="mt-4 text-base md:text-lg text-start leading-relaxed text-gray-300 font-medium font-montserrat">
                     ISC empowers Ethiopian students to achieve their academic dreams,
                     handling everything from documentation and visas to transportation
                     and personalized support.
                   </p>
                   <Button
-                    className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 hover:bg-[#00CBAE] transition rounded-[64px]"
+                    className="bg-[#00EDCF] text-[#01013A] font-medium font-montserrat px-4 py-2 mt-6 hover:bg-[#00CBAE] transition rounded-[64px]"
                     handleOnClick={handleOnClick}
                     name="Study abroad"
                   />
                 </div>
             </RevealWrapper>
             <RevealWrapper origin="bottom" distance="60px" duration={3000} delay={300} reset={true}>
-                <div className="relative w-full sm:w-[530px] lg:w-[592px] h-[400px] sm:h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
+                <div className="relative w-full sm:w-[530px] lg:w-[592px] h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
                   <Image
-                    src="/assets/hero_with_out_background.png"
+                    src="/assets/hero.png"
                     alt="Students"
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     className="rounded-lg "
                   />
 
-                  <div className="absolute top-[-16px] left-[80px] h-8 w-8 sm:h-10 sm:w-10 bg-white p-1 sm:p-2 rounded-full grid place-content-center shadow-md">
-                    ✈️
+                  <div className="absolute top-[-16px] left-[80px] h-8 w-8 sm:h-10 sm:w-10 bg-[#00EDCF] p-1 sm:p-2 rounded-full grid place-content-center shadow-md animate-bounce">
+                    {/* ✈️ */}
                   </div>
 
-                  <div className="absolute bottom-[50px] right-[-10px] h-8 w-8 sm:h-10 sm:w-10 bg-white p-1 sm:p-2 rounded-full grid place-content-center shadow-md">
-                    📚
+                  <div className="absolute bottom-[50px] right-[-10px] h-8 w-8 sm:h-10 sm:w-10 bg-[#00EDCF] p-1 sm:p-2 rounded-full grid place-content-center shadow-md animate-bounce">
+                    {/* 📚 */}
                   </div>
                 </div>
             </RevealWrapper>

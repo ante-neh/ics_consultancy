@@ -33,7 +33,7 @@ const ContactPage = () => {
       <div className="absolute bottom-20 right-16 w-6 h-6 bg-[#00EDCF] rounded-full animate-pulse"></div>
       <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-[#00EDCF] rounded-full animate-bounce"></div>
       <div className="max-w-4xl w-full bg-[#DEF5E5] p-8 rounded-lg shadow-md">
-        <h2 className="text-center text-3xl md:text-4xl font-bold text-[#01013A] mb-6">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-[#01013A] mb-6 font-montserrat">
           CONTACT US
         </h2>
 
@@ -42,14 +42,14 @@ const ContactPage = () => {
             type="text"
             name="user_name"
             placeholder="Name"
-            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 focus:outline-none"
+            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 focus:outline-none font-montserrat"
             required
           />
           <input
             type="email"
             name="user_email"
             placeholder="Email"
-            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 focus:outline-none"
+            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 focus:outline-none font-montserrat"
             required
           />
 
@@ -57,14 +57,14 @@ const ContactPage = () => {
             name="message"
             rows={5}
             placeholder="Message"
-            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 md:col-span-2 focus:outline-none"
+            className="p-3 rounded-lg bg-white shadow-inner text-gray-700 md:col-span-2 focus:outline-none font-montserrat"
             required
           ></textarea>
 
           <div className="md:col-span-2 flex justify-center">
             <button
               type="submit"
-              className="bg-[#01013A] text-white px-8 py-2 rounded-lg hover:bg-[#00EDCF] hover:text-[#01013A] transition"
+              className="bg-[#01013A] text-white px-8 py-2 rounded-lg hover:bg-[#00EDCF] hover:text-[#01013A] transition font-montserrat"
               
             >
               Submit

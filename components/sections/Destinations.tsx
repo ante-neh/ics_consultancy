@@ -13,7 +13,7 @@ const Destinations = () => {
   return (
     <div className="flex flex-col gap-12 py-12 items-center scroll-mt-20 bg-[#00EDCF]">
       <Container className="flex flex-col gap-12 py-4 items-center">
-        <h1 className="text-3xl font-bold font-euclid text-white" id="destinations">
+        <h1 className="text-3xl font-bold font-montserrat text-white" id="destinations">
           Destinations
         </h1>
       </Container>

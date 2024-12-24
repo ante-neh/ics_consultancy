@@ -18,10 +18,10 @@ const ServiceCard: FC<{ icon: string | StaticImageData; name: string , descripti
           <Image width={60} height={60} src={icon} alt={`${name} icon`} />
         </div>
         {/* Title with Underline Animation */}
-        <h3 className="text-xl font-bold text-center mb-2 relative after:absolute after:w-0 after:h-[3px] after:bg-[#00EDCF] after:bottom-0 after:left-0 after:transition-all after:duration-500 group-hover:after:w-full">
+        <h3 className="text-xl font-bold text-center mb-2 font-montserrat relative after:absolute after:w-0 after:h-[3px] after:bg-[#00EDCF] after:bottom-0 after:left-0 after:transition-all after:duration-500 group-hover:after:w-full">
           {name}
         </h3>
-        <p>{description}</p>
+        <p className="font-montserrat">{description}</p>
       </div>
     </div>
   );

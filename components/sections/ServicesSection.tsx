@@ -18,7 +18,7 @@ const ServicesSection = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-[#01013A]">
                 Our Services
               </h2>
-              <p className="text-[#01013A] mt-4 text-lg leading-relaxed">
+              <p className="text-[#01013A] mt-4 text-start text-lg leading-relaxed font-montserrat font-normal">
                 We vouch for keeping up with our promises, delivering what we signed
                 up for so that you can rely on us, and consider us like a family who
                 cares for your future.

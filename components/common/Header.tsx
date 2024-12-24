@@ -44,7 +44,7 @@ const Header = () => {
             <Link
               key={index}
               href={nav.href}
-              className="hover:bg-[#00EDCF] hover:rounded-lg px-2 py-1 hover:text-[#01013A] text-white font-euclid font-medium"
+              className="hover:bg-[#00EDCF] hover:rounded-lg px-2 py-1 hover:text-[#01013A] text-white font-montserrat font-medium"
             >
               {nav.name}
             </Link>

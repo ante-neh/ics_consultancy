@@ -218,7 +218,7 @@ const CountryRequirements = () => {
   return (
     <div className="bg-[#EBEBEB] py-12 px-6 text-[#01013A]">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl font-bold text-center text-[#00EDCF] mb-8">
+        <h2 className="text-4xl font-bold text-center text-[#00EDCF] mb-8 font-monserrat">
           Country Requirements
         </h2>
         <Button
@@ -233,7 +233,7 @@ const CountryRequirements = () => {
             <button
               key={country.country}
               onClick={() => setSelectedCountry(country)}
-              className={`py-3 px-4 rounded-lg font-semibold transition ${
+              className={`py-3 px-4 rounded-lg font-semibold transition font-montserrat ${
                 selectedCountry.country === country.country
                   ? "bg-[#00EDCF] text-white"
                   : "bg-white text-[#01013A] hover:bg-[#00EDCF] hover:text-white"
@@ -248,7 +248,7 @@ const CountryRequirements = () => {
         <div className="bg-white rounded-lg shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Image */}
-            <div className="relative w-full h-44 smd:h-64 lg:h-full rounded-lg overflow-hidden">
+            <div className="relative w-full h-96 smd:h-64 lg:h-full rounded-lg overflow-hidden">
               <Image
                 src={selectedCountry.image}
                 alt={selectedCountry.country}
@@ -260,17 +260,17 @@ const CountryRequirements = () => {
 
             {/* Requirements */}
             <div className="p-4">
-              <h3 className="text-2xl font-bold text-[#00EDCF] mb-4">
+              <h3 className="text-2xl font-bold text-[#00EDCF] mb-4 font-montserrat">
                 {selectedCountry.country}
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Bachelors Section */}
                 <div>
-                  <h4 className="text-xl font-semibold mb-3">
+                  <h4 className="text-xl font-semibold mb-3 font-montserrat">
                     Bachelor&apos;s Requirements
                   </h4>
-                  <ul className="list-disc pl-5 text-lg space-y-2">
+                  <ul className="list-disc pl-5 text-lg space-y-2 font-montserrat">
                     {selectedCountry.bachelors.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -279,10 +279,10 @@ const CountryRequirements = () => {
 
                 {/* Masters Section */}
                 <div>
-                  <h4 className="text-xl font-semibold mb-3">
+                  <h4 className="text-xl font-semibold mb-3 font-montserrat">
                     Master&apos;s Requirements
                   </h4>
-                  <ul className="list-disc pl-5 text-lg space-y-2">
+                  <ul className="list-disc pl-5 text-lg space-y-2 font-montserrat">
                     {selectedCountry.masters.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}

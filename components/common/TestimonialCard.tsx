@@ -24,7 +24,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
         isExpanded ? "h-auto" : "h-auto"
       }`}
     >
-      <div className="relative w-full h-[270px] md:h-[350px] lg:h-[450px]">
+      <div className="relative w-full h-[450px]">
         <Image
           src={image}
           alt={name}
@@ -36,11 +36,11 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 
       <div className="p-6 flex flex-col items-center">
         <h3 className="text-xl font-semibold text-[#00EDCF] mb-1">{name}</h3>
-        <p className="text-sm text-gray-300 mb-2">
+        <p className="text-sm text-gray-300 mb-2 font-montserrat">
           {level} {" "} {country}
         </p>
         <p
-          className={`text-gray-100 text-center md:text-left leading-relaxed italic ${
+          className={`text-gray-100 text-center md:text-left leading-relaxed italic font-monserrat font-light ${
             isExpanded ? "line-clamp-none" : "line-clamp-3"
           }`}
         >

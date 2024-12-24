@@ -24,7 +24,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 }) => (
   <Html>
     <Head />
-    <Preview>New Contact Form Submission</Preview>
+    <Preview className="">New Contact Form Submission</Preview>
     <Body className="bg-gray-100 font-sans p-5">
       <Container className="bg-white rounded-lg shadow-md max-w-xl mx-auto p-6">
         {/* Header */}
