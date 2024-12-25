@@ -57,7 +57,7 @@ const HeroSection = () => {
               ></div>
 
               <Image
-                src="/assets/newHero-remove-bg.png"
+                src="/assets/newHero-removebg.png"
                 alt="Students"
                 layout="fill"
                 objectFit="contain"
