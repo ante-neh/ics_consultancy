@@ -33,8 +33,14 @@ const HeroSection = () => {
             </RevealWrapper>
             <RevealWrapper origin="bottom" distance="60px" duration={3000} delay={300} reset={true}>
                 <div className="relative w-[530px] lg:w-[592px] h-[500px] flex-shrink-0 mx-auto md:mx-0 hero_image">
+                  <div
+                    className="absolute inset-0 z-10"
+                    style={{
+                      background: "linear-gradient(to bottom, rgba(1, 1, 58, 0) 70%, #01013A 100%)",
+                    }}
+                  ></div>
                   <Image
-                    src="/assets/hero.png"
+                    src="/assets/newHero-remove-bg.png"
                     alt="Students"
                     layout="fill"
                     objectFit="contain"

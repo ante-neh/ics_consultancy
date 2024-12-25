@@ -5,9 +5,10 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
 const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  weight: ['400', '700'],
+})
 
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} bg-[#01013A]`}
+        className={`${montserrat.className} bg-[#01013A]`}
       >
         <Header />
         {children}
