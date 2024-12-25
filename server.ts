@@ -8,9 +8,16 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
  
 app.prepare().then(() => {
-  createServer((req, res) => {
+  createServer(async(req, res) => {
     const parsedUrl = parse(req.url!, true)
-    handle(req, res, parsedUrl)
+    const { pathname } = parsedUrl
+    if (pathname === '/apply') {
+      await app.render(req, res, '/apply')
+    } else if (pathname === '/about') {
+      await app.render(req, res, '/b')
+    } else {
+      await handle(req, res, parsedUrl)
+    }
   }).listen(port)
  
   console.log(

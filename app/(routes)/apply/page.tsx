@@ -218,17 +218,17 @@ const CountryRequirements = () => {
   return (
     <div className="bg-[#EBEBEB] py-12 px-6 text-[#01013A]">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-4xl font-bold text-center text-[#00EDCF] mb-8 font-monserrat">
+        <h2 className="text-4xl font-bold text-center text-[#00EDCF] mb-8 font-montserrat">
           Country Requirements
         </h2>
         <Button
-            className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 mb-4 hover:bg-[#00CBAE] transition rounded-[64px]"
+            className="bg-[#00EDCF] text-[#01013A] font-medium font-montserrat px-4 py-2 mt-6 mb-4 hover:bg-[#00CBAE] transition rounded-[64px]"
             handleOnClick={handleOnClick}
             name="Apply"
         />
 
         {/* Country Selection */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 font-montserrat">
           {countryData.map((country) => (
             <button
               key={country.country}

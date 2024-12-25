@@ -46,7 +46,7 @@ const Footer = () => {
 
             {/* Malaysia */}
             <p className="mt-4 font-light font-montserrat">
-              <strong>Malaysia:</strong> Neu Suites Jalan Ampang | 55000, Kuala Lumpur <br />
+              <strong className="font-montserrat font-light">Malaysia:</strong> Neu Suites Jalan Ampang | 55000, Kuala Lumpur <br />
               Phone: +60 16 446 8149 <br />
               {/* <Link
                 href="https://goo.gl/maps/abcdef123456"
@@ -65,7 +65,7 @@ const Footer = () => {
                 <li key={index} className="mt-2">
                   <Link
                     href={item.href}
-                    className="text-[#00EDCF] hover:underline"
+                    className="text-[#00EDCF] hover:underline font-montserrat"
                   >
                     {item.name}
                   </Link>

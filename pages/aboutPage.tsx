@@ -95,7 +95,7 @@ const About = () => {
                   ⭐ {/* Icon Placeholder */}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#00EDCF]">
+              <h3 className="text-2xl font-bold font-montserrat mb-4 text-[#00EDCF]">
                 OBJECTIVES
               </h3>
               <ul className="text-white space-y-2 text-center md:text-left font-montserrat">

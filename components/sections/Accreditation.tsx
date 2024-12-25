@@ -25,7 +25,7 @@ const AccreditationSection = () => {
           <h2 className="text-2xl font-bold text-center text-gray-700 mb-8 font-montserrat">
             ACCREDITATION & CERTIFICATIONS
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 font-montserrat">
             {accreditations.map((item) => (
             
                   <div
@@ -52,7 +52,7 @@ const AccreditationSection = () => {
             >
               <div className="relative">
                 <button
-                  className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
+                  className="absolute top-2 right-2 text-white text-3xl font-bold z-10 font-montserrat"
                   onClick={() => setSelectedImage(null)}
                 >
                   &times;

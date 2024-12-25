@@ -14,12 +14,12 @@ const HeroSection = () => {
         <Container className="bg-[#01013A] max-w-[1300px] gap-12">
           <div className="w-full text-white flex flex-col md:flex-row items-center gap-12 justify-between relative mx-auto">
             <RevealWrapper origin="top" distance="60px" duration={3000} delay={300} reset={true}>
-                <div className="max-w-[550px] text-center md:text-left hero_text">
+                <div className="max-w-[550px] text-center hero_text">
                   <h2 className="text-2xl sm:text-6xl leading-tight font-semibold font-montserrat">
                     Your trusted <br />
                     education <span className="text-[#00EDCF]">advisor!</span>
                   </h2>
-                  <p className="mt-4 text-base md:text-lg text-start leading-relaxed text-gray-300 font-medium font-montserrat">
+                  <p className="mt-4 text-base md:text-lg text-center leading-relaxed text-gray-300 font-medium font-montserrat">
                     ISC empowers Ethiopian students to achieve their academic dreams,
                     handling everything from documentation and visas to transportation
                     and personalized support.

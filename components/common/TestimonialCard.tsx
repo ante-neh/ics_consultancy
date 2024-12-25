@@ -35,7 +35,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
       </div>
 
       <div className="p-6 flex flex-col items-center">
-        <h3 className="text-xl font-semibold text-[#00EDCF] mb-1">{name}</h3>
+        <h3 className="text-xl font-semibold text-[#00EDCF] font-montserrat mb-1">{name}</h3>
         <p className="text-sm text-gray-300 mb-2 font-montserrat">
           {level} {" "} {country}
         </p>

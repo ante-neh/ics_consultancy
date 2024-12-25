@@ -38,7 +38,7 @@ const Testimonials = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={toggleVisibility}
-            className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 hover:bg-[#00CBAE] transition rounded-[64px]"
+            className="bg-[#00EDCF] text-[#01013A] font-medium px-4 py-2 mt-6 hover:bg-[#00CBAE] transition font-montserrat rounded-[64px]"
           >
             {isExpanded ? "See Less" : "See More"}
           </button>

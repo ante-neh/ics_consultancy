@@ -51,7 +51,7 @@ const AboutSection = () => {
                   <h3 className="text-3xl md:text-4xl font-bold text-[#00EDCF] mb-4 text-center md:text-left font-montserrat">
                     About Us
                   </h3>
-                  <p className="text-lg leading-relaxed mb-6 text-[#01013A] text-start md:text-left font-montserrat font-normal">
+                  <p className="text-lg leading-relaxed mb-6 text-[#01013A] text-center md:text-left font-normal font-montserrat">
                   The International Student Community (ISC) is a pioneering organization founded by Ethiopian students in Italy to empower
                   Ethiopian students to achieve their academic dreams on a global scale.
                   Established with the vision of bridging the gap between ambition and opportunity,
